@@ -1,0 +1,53 @@
+{
+  "summary": "Executed backend API regression and frontend integration/UI checks against the public preview URL. Core pages, routing, filters, structured data, responsiveness, and contact flow pass. AI chatbot widget fails to open due bottom-right click interception.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "AiAdvisorChat toggle",
+        "issue": "AI chat widget cannot be opened; toggle button click is intercepted/overlapped by another bottom-right anchor element.",
+        "selector": "[data-testid='ai-chat-toggle-button']",
+        "priority": "CRITICAL"
+      }
+    ],
+    "integration_issues": [
+      {
+        "flow": "AI advisor widget open -> disclaimer/prompts/context -> chat send",
+        "issue": "Blocked at first step because chat panel does not open from UI despite force clicks.",
+        "affected_selectors": [
+          "[data-testid='ai-chat-toggle-button']",
+          "[data-testid='ai-chat-panel']"
+        ]
+      }
+    ],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_public_api_regression.py",
+    "/app/test_reports/pytest/pytest_results.xml"
+  ],
+  "action_items": [
+    "Fix bottom-right overlap/click interception so AI chat toggle is reliably clickable.",
+    "Retest full AI chat flow (open panel, suggested prompts, context fields, POST /api/chat placeholder response rendering)."
+  ],
+  "critical_code_review_comments": [
+    "Critical UX/integration issue: two fixed bottom-right interactive elements conflict (chat launcher and another floating anchor), causing chat launcher to be non-functional.",
+    "All tested backend routes return expected status and data shapes; no API-side blockers detected for required scope."
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_public_api_regression.py",
+    "/app/test_reports/iteration_1.json"
+  ],
+  "success_rate": {
+    "backend": "100%",
+    "frontend": "92%"
+  },
+  "seed_data_creation": "Created TEST_ contact submissions via /api/contact during regression checks.",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Public URL used from frontend/.env. Backend pytest suite created and passing. Chat issue reproduced consistently in 3 runs; panel count remained 0 after forced clicks. Diagnostic check showed elementFromPoint over chat button center is an <a> element (non-chat), indicating overlap interception.",
+  "rca of the issue": "Repro: open home page -> click [data-testid='ai-chat-toggle-button'] (force) -> expect [data-testid='ai-chat-panel']; actual panel absent. Repeated twice in same run, and in dedicated run. Diagnostic JS on button center returned top element tag 'A', not the button, while a separate floating bottom-right badge is visible. Root cause is stacking/position overlap click interception in bottom-right corner. Mitigation: offset one widget, raise chat z-index above external badge, or reserve non-overlapping safe area."
+}

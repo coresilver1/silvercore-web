@@ -1,34 +1,50 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+.App {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
 }
 
-.App-link {
-    color: #61dafb;
+.page-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
+.hero-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .hero-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
     }
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(28px);
+    animation: revealUp 0.8s ease forwards;
+}
+
+.reveal-delay-1 {
+    animation-delay: 0.12s;
+}
+
+.reveal-delay-2 {
+    animation-delay: 0.24s;
+}
+
+.reveal-delay-3 {
+    animation-delay: 0.36s;
+}
+
+.editorial-frame {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    box-shadow: 0 24px 80px rgba(2, 6, 23, 0.45);
+}
+
+@keyframes revealUp {
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+        transform: translateY(0);
     }
 }
