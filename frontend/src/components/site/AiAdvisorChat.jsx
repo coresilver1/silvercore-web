@@ -78,11 +78,14 @@ export const AiAdvisorChat = ({ chat, brand }) => {
           <div className="flex items-start justify-between gap-3 border-b border-white/10 pb-4">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-sky-300" data-testid="ai-chat-brand">
-                {brand.name} AI Advisor
+                {brand.name}
               </p>
               <h3 className="mt-2 font-['Cormorant_Garamond'] text-2xl tracking-tight text-white" data-testid="ai-chat-heading">
-                General cross-border guidance
+                M&A Advisor
               </h3>
+              <p className="mt-2 max-w-xs text-sm leading-6 text-slate-300" data-testid="ai-chat-helper-text">
+                Ask about process, capital strategy, buyer or investor fit, transaction pacing or cross-border advisory.
+              </p>
             </div>
             <Button variant="ghost" className="rounded-full text-slate-300 hover:bg-white/10 hover:text-white" onClick={() => setIsOpen(false)} data-testid="ai-chat-close-button">
               Close
@@ -159,7 +162,7 @@ export const AiAdvisorChat = ({ chat, brand }) => {
             <Textarea
               value={message}
               onChange={(event) => setMessage(event.target.value)}
-              placeholder="Ask about process, capital options, transaction pacing or cross-border considerations."
+              placeholder="Ask about process, capital strategy, buyer or investor fit, transaction pacing or cross-border advisory."
               className="min-h-[96px] rounded-none border-white/10 bg-white/[0.03]"
               data-testid="ai-chat-message-input"
             />
@@ -170,7 +173,7 @@ export const AiAdvisorChat = ({ chat, brand }) => {
               data-testid="ai-chat-send-button"
             >
               <Send className="mr-2 h-4 w-4" />
-              {isSending ? "Sending..." : "Send to AI advisor"}
+              {isSending ? "Sending..." : "Send to M&A Advisor"}
             </Button>
           </div>
         </div>
@@ -182,7 +185,7 @@ export const AiAdvisorChat = ({ chat, brand }) => {
         data-testid="ai-chat-toggle-button"
       >
         {isOpen ? <MessageSquareText className="mr-2 h-4 w-4" /> : <Bot className="mr-2 h-4 w-4" />}
-        {isOpen ? "Hide advisor" : "Ask Silvercore AI"}
+        {isOpen ? "Hide M&A Advisor" : "Ask M&A Advisor"}
         <Sparkles className="ml-2 h-4 w-4" />
       </Button>
     </div>

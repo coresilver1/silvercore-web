@@ -46,10 +46,26 @@ def test_get_site_content_structure(api_client):
 
     data = response.json()
     assert data["brand"]["name"] == "Silvercore Partners"
-    assert isinstance(data["services"]["items"], list)
-    assert len(data["services"]["items"]) == 6
-    assert isinstance(data["insights"]["posts"], list)
-    assert len(data["insights"]["posts"]) == 10
+    assert data["brand"]["regions"] == ["India", "United States", "Europe", "United Kingdom"]
+
+    # Team and contact updates requested in latest scope.
+    partner_names = [member["name"] for member in data["about"]["partners"]]
+    assert partner_names == ["Nidhi Arora", "Sameer", "Sam"]
+
+    partner_roles = [member["role"] for member in data["about"]["partners"]]
+    assert partner_roles == [
+        "Founder & M&A Advisor",
+        "Founder & M&A Advisor",
+        "M&A Advisor",
+    ]
+
+    contact_emails = [item["address"] for item in data["contact"]["emails"]]
+    assert contact_emails == ["info@silvercorepartner.com", "contact@silvercorepartner.com"]
+
+    assert "offices" not in data["contact"]
+
+    market_names = [market["name"] for market in data["global_coverage"]["markets"]]
+    assert market_names == ["India", "United States", "Europe", "United Kingdom"]
 
 
 # Contact workflow check for storage-ready backend behavior.
@@ -88,6 +104,8 @@ def test_post_chat_not_configured_fallback(api_client):
     assert data["success"] is True
     assert data["configured"] is False
     assert isinstance(data["session_id"], str) and len(data["session_id"]) > 10
+    assert "m&a advisor" in data["reply"].lower()
     assert "api key" in data["reply"].lower()
-    assert "educational" in data["disclaimer"].lower()
+    for token in ["general information", "legal", "tax", "investment", "regulatory advice"]:
+        assert token in data["disclaimer"].lower()
     assert isinstance(data["suggested_prompts"], list) and len(data["suggested_prompts"]) >= 1

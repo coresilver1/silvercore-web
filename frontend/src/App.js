@@ -63,7 +63,12 @@ const ErrorState = ({ onRetry }) => (
 );
 
 const AppRoutes = ({ content }) => (
-  <SiteLayout brand={content.brand} offices={content.contact.offices} chat={content.chat}>
+  <SiteLayout
+    brand={content.brand}
+    contact={content.contact}
+    globalCoverage={content.global_coverage}
+    chat={content.chat}
+  >
     <Routes>
       <Route path="/" element={<HomePage content={content} />} />
       <Route path="/about" element={<AboutPage content={content} />} />

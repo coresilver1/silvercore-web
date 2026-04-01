@@ -44,7 +44,7 @@ export default function ContactPage({ content }) {
     <>
       <SeoHead
         title="Contact Silvercore Partners"
-        description="Contact Silvercore Partners across India, the U.S., Europe and the U.K. to discuss M&A or strategic capital mandates."
+        description="Contact Silvercore Partners to discuss sell-side advisory, buy-side support, growth capital strategy and cross-border M&A opportunities."
         structuredData={[buildOrganizationSchema(content)]}
       />
 
@@ -133,31 +133,63 @@ export default function ContactPage({ content }) {
               <p className="mt-4 text-sm leading-7 text-slate-400" data-testid="contact-notification-note">
                 Every submission is saved for direct advisor review and future notification workflows.
               </p>
+              <p className="mt-3 text-sm leading-7 text-slate-300" data-testid="contact-founder-review-note">
+                {content.contact.review_note}
+              </p>
             </form>
 
-            <div className="grid gap-6 sm:grid-cols-2">
-              {content.contact.offices.map((office, index) => (
-                <article key={office.region} className="border border-white/10 bg-white/[0.03]" data-testid={`contact-office-card-${index}`}>
-                  <img
-                    src={office.image}
-                    alt={`${office.region} office`}
-                    className="h-48 w-full object-cover object-center"
-                    data-testid={`contact-office-image-${index}`}
-                  />
-                  <div className="p-6">
-                    <p className="text-xs uppercase tracking-[0.35em] text-sky-300">{office.region}</p>
-                    <h3 className="mt-3 font-['Cormorant_Garamond'] text-3xl text-white" data-testid={`contact-office-city-${index}`}>
-                      {office.city}
-                    </h3>
-                    <p className="mt-3 text-sm leading-7 text-slate-300" data-testid={`contact-office-address-${index}`}>
-                      {office.address}
-                    </p>
-                    <p className="mt-3 text-sm text-slate-100" data-testid={`contact-office-phone-${index}`}>
-                      {office.phone}
-                    </p>
-                  </div>
-                </article>
-              ))}
+            <div className="grid gap-6">
+              <div className="editorial-frame p-8" data-testid="contact-channels-card">
+                <p className="text-xs uppercase tracking-[0.35em] text-sky-300">Direct channels</p>
+                <h3 className="mt-4 font-['Cormorant_Garamond'] text-4xl text-white" data-testid="contact-channels-heading">
+                  Email or WhatsApp works alongside the enquiry form.
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-slate-300" data-testid="contact-channels-description">
+                  Share a concise summary of your transaction, capital strategy or cross-border advisory goals. Enquiries are reviewed directly by the founders and routed based on mandate fit.
+                </p>
+
+                <div className="mt-6 grid gap-4">
+                  {content.contact.emails.map((email, index) => (
+                    <a
+                      key={email.address}
+                      href={`mailto:${email.address}`}
+                      className="border border-white/10 bg-white/[0.03] p-4 transition hover:border-sky-300/40 hover:bg-white/[0.05]"
+                      data-testid={`contact-email-link-${index}`}
+                    >
+                      <p className="text-xs uppercase tracking-[0.3em] text-slate-400">{email.label}</p>
+                      <p className="mt-2 text-sm text-slate-100" data-testid={`contact-email-address-${index}`}>
+                        {email.address}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+
+                <a
+                  href={content.contact.whatsapp.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-6 inline-flex w-full items-center justify-center rounded-full border border-emerald-400/40 bg-emerald-400/10 px-5 py-4 text-center text-sm text-emerald-100 transition hover:border-emerald-300/70 hover:bg-emerald-400/15"
+                  data-testid="contact-whatsapp-link"
+                >
+                  Connect on WhatsApp — {content.contact.whatsapp.display}
+                </a>
+              </div>
+
+              <div className="border border-white/10 bg-white/[0.03] p-8" data-testid="contact-coverage-card">
+                <p className="text-xs uppercase tracking-[0.35em] text-sky-300">Operating markets</p>
+                <div className="mt-6 grid gap-5 sm:grid-cols-2">
+                  {content.global_coverage.markets.map((market, index) => (
+                    <div key={market.name} className="border border-white/10 bg-black/20 p-5" data-testid={`contact-market-card-${index}`}>
+                      <h4 className="font-['Cormorant_Garamond'] text-2xl text-white" data-testid={`contact-market-title-${index}`}>
+                        {market.name}
+                      </h4>
+                      <p className="mt-3 text-sm leading-7 text-slate-300" data-testid={`contact-market-summary-${index}`}>
+                        {market.summary}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

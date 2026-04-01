@@ -1,5 +1,6 @@
 import { SeoHead } from "../components/site/SeoHead";
 import { SectionHeader } from "../components/site/SectionHeader";
+import { AdvisorAvatar } from "../components/site/AdvisorAvatar";
 import { buildOrganizationSchema } from "../lib/seo";
 
 export default function AboutPage({ content }) {
@@ -43,20 +44,15 @@ export default function AboutPage({ content }) {
       <section className="page-section border-y border-white/10 bg-black/20 px-6 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <SectionHeader
-            eyebrow="Senior team"
-            title="Three fictional partner profiles written as launch-ready advisory copy."
-            description="The biographies below are crafted to feel credible, grounded and transparent while remaining clear placeholder profiles for a boutique cross-border practice."
+            eyebrow="Founders & team"
+            title="The advisors behind Silvercore’s cross-border mandate work."
+            description="The team section now uses premium illustrated placeholders to keep the visual language clean, consistent and credible while the firm finalizes portrait photography."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {content.about.partners.map((partner, index) => (
               <article key={partner.name} className="editorial-frame overflow-hidden" data-testid={`partner-card-${index}`}>
-                <img
-                  src={partner.image}
-                  alt={partner.name}
-                  className="h-80 w-full object-cover object-center"
-                  data-testid={`partner-image-${index}`}
-                />
+                <AdvisorAvatar name={partner.name} index={index} />
                 <div className="p-8">
                   <p className="text-xs uppercase tracking-[0.3em] text-slate-400">{partner.role}</p>
                   <h3 className="mt-4 font-['Cormorant_Garamond'] text-3xl text-white" data-testid={`partner-name-${index}`}>

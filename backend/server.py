@@ -195,7 +195,7 @@ async def chat_with_advisor(payload: ChatRequest):
 
     if not OPENAI_API_KEY:
         reply = (
-            "The Silvercore AI advisor is ready to connect, but the OpenAI API key has not been added yet. "
+            "The M&A Advisor is ready to connect, but the OpenAI API key has not been added yet. "
             "Once configured, I can help with general educational guidance on cross-border M&A, growth capital "
             "and deal structuring. In the meantime, tell me your business type, sector, size range and goals so the transcript is ready."
         )

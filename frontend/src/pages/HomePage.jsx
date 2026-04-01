@@ -106,6 +106,80 @@ export default function HomePage({ content }) {
       </section>
 
       <section className="page-section px-6 lg:px-10">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            eyebrow={content.global_coverage.eyebrow}
+            title={content.global_coverage.title}
+            description={content.global_coverage.description}
+          />
+
+          <div className="mt-12 grid gap-6 lg:grid-cols-2 xl:grid-cols-4">
+            {content.global_coverage.markets.map((market, index) => (
+              <article key={market.name} className="border border-white/10 bg-white/[0.03] p-6" data-testid={`home-market-card-${index}`}>
+                <p className="text-xs uppercase tracking-[0.35em] text-sky-300">{market.name}</p>
+                <p className="mt-4 text-sm leading-7 text-slate-300" data-testid={`home-market-summary-${index}`}>
+                  {market.summary}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section border-y border-white/10 bg-black/20 px-6 lg:px-10">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeader
+            eyebrow="Who we work with"
+            title="Advisory support for founders, investors and strategic decision-makers."
+            description="Silvercore supports mandates where strategic context, capital strategy and cross-border execution need to work together rather than in isolation."
+          />
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+            {content.home.who_we_work_with.map((profile, index) => (
+              <article key={profile.title} className="editorial-frame p-6" data-testid={`home-client-profile-${index}`}>
+                <h3 className="font-['Cormorant_Garamond'] text-3xl text-white" data-testid={`home-client-profile-title-${index}`}>
+                  {profile.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-slate-300" data-testid={`home-client-profile-description-${index}`}>
+                  {profile.body}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section px-6 lg:px-10">
+        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
+          <div className="editorial-frame p-8 lg:p-10" data-testid="home-typical-situations-card">
+            <p className="text-xs uppercase tracking-[0.35em] text-sky-300">Typical situations we support</p>
+            <h2 className="mt-4 font-['Cormorant_Garamond'] text-4xl tracking-tight text-white">Where disciplined M&A advice matters most.</h2>
+            <ul className="mt-6 space-y-4 text-sm leading-7 text-slate-300">
+              {content.home.typical_situations.map((item, index) => (
+                <li key={item} className="flex gap-3" data-testid={`home-typical-situation-${index}`}>
+                  <span className="mt-2 h-2 w-2 rounded-full bg-sky-300" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="editorial-frame p-8 lg:p-10" data-testid="home-why-silvercore-card">
+            <p className="text-xs uppercase tracking-[0.35em] text-sky-300">Why Silvercore</p>
+            <h2 className="mt-4 font-['Cormorant_Garamond'] text-4xl tracking-tight text-white">A boutique process built around trust and execution quality.</h2>
+            <div className="mt-6 space-y-5">
+              {content.home.why_silvercore.map((item, index) => (
+                <div key={item.title} className="border-t border-white/10 pt-5 first:border-t-0 first:pt-0" data-testid={`home-why-silvercore-item-${index}`}>
+                  <h3 className="text-lg text-slate-100">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-300">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="page-section px-6 lg:px-10">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <SectionHeader

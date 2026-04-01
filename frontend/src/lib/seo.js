@@ -8,10 +8,10 @@ export const buildOrganizationSchema = (content) => ({
   description: content.brand.description,
   url: currentOrigin(),
   areaServed: content.brand.regions,
-  contactPoint: content.contact.offices.map((office) => ({
+  contactPoint: content.contact.emails.map((email) => ({
     "@type": "ContactPoint",
-    areaServed: office.region,
-    telephone: office.phone,
+    areaServed: content.brand.regions,
+    email: email.address,
     contactType: "M&A advisory",
   })),
 });

@@ -10,9 +10,9 @@ SITE_CONTENT = {
     "updated_at": iso_now(),
     "brand": {
         "name": "Silvercore Partners",
-        "tagline": "One advisory lens across India, the U.S., Europe and the U.K.",
-        "mission": "Silvercore Partners helps founders, families, investors and strategic buyers navigate cross-border decisions with clear judgment, disciplined process and senior-led execution. We work selectively so every mandate receives the attention, preparation and candor required to move from first conversation to credible outcome.",
-        "description": "Boutique M&A advisory firm focused on cross-border deals across India, the U.S., Europe and the U.K.",
+        "tagline": "Cross-border M&A clarity across India, the United States, Europe and the United Kingdom.",
+        "mission": "Silvercore Partners advises founders, family businesses, growth-stage companies, investors and strategic buyers on sell-side advisory, buy-side support, growth capital advisory, capital structuring, investor positioning and disciplined cross-border execution support. We stay selective so every mandate receives founder-level attention, thoughtful market mapping and senior-led judgment from preparation through negotiation.",
+        "description": "Boutique M&A advisory firm focused on sell-side, buy-side, growth capital and cross-border execution support across India, the United States, Europe and the United Kingdom.",
         "regions": ["India", "United States", "Europe", "United Kingdom"],
         "metrics": [
             {"label": "Strategic engagements", "value": "50+"},
@@ -26,54 +26,121 @@ SITE_CONTENT = {
     "home": {
         "hero": {
             "eyebrow": "Cross-border M&A advisory",
-            "headline": "Connecting Indian ambition with U.S., European and U.K. capital.",
-            "subheadline": "We advise on strategic sales, growth capital, capital structuring and investor positioning with calm execution and selective mandate coverage.",
+            "headline": "Connecting strategic sellers, buyers and capital partners across four core markets.",
+            "subheadline": "We support sell-side advisory, buy-side evaluation, growth capital strategy, investor positioning, diligence preparation and cross-border execution with disciplined pacing and senior-led judgment.",
             "image": "https://images.unsplash.com/photo-1766923939514-71397ab6d658?auto=format&fit=crop&w=1400&q=80"
         },
         "pillars": [
             {
                 "title": "Strategic clarity",
-                "body": "We start by defining the real objective behind a transaction—liquidity, growth, control, succession or new market access—so the process is shaped around the outcome instead of generic market noise."
+                "body": "We define the transaction objective early—sale, growth capital, acquisition, strategic partnership or readiness work—so the process is shaped around value creation rather than generic deal activity."
             },
             {
                 "title": "Selective coverage",
-                "body": "Silvercore takes on a limited number of mandates at a time. That selectivity keeps preparation, investor mapping and outreach precise, and ensures senior advisors remain close to every discussion."
+                "body": "Silvercore accepts a limited number of mandates at a time. That selectivity keeps buyer and investor outreach focused, materials sharper and management time protected."
             },
             {
-                "title": "Senior-led execution",
-                "body": "Our partners stay involved from positioning through diligence and negotiation. Clients benefit from experienced judgment at the moments where tone, timing and structure matter most."
+                "title": "Cross-border judgment",
+                "body": "We help clients bridge expectations across India, the U.S., Europe and the U.K. by anticipating diligence questions, pacing differences and counterpart priorities before they slow execution."
             }
         ],
-        "regional_summary": "Our practice sits at the intersection of India’s operating depth, U.S. capital markets, European strategic appetite and the U.K.’s global investor networks. That geography is not a slogan; it shapes how we identify buyers, frame opportunities and anticipate cross-border friction before it slows a process.",
+        "regional_summary": "Our practice sits at the intersection of India’s operating depth, U.S. capital markets, European strategic appetite and U.K. investor networks. That coverage helps us frame sell-side narratives, test buyer fit, support capital strategy and manage cross-border execution with greater precision.",
         "featured_quotes": [
-            "We believe disciplined preparation creates negotiating leverage.",
-            "Good cross-border advice translates not just language, but incentives, pace and expectations."
+            "Disciplined preparation improves valuation conversations, diligence confidence and buyer or investor fit.",
+            "Cross-border advisory works best when strategy, process and stakeholder expectations are translated with care."
+        ],
+        "who_we_work_with": [
+            {
+                "title": "Founders",
+                "body": "Entrepreneurs evaluating a sale, secondary liquidity, growth capital or strategic partnership and looking for grounded advice before market outreach begins."
+            },
+            {
+                "title": "Family businesses",
+                "body": "Multi-generational businesses considering succession, recapitalization, strategic sale or selective capital partnerships with long-term alignment in mind."
+            },
+            {
+                "title": "Growth-stage companies",
+                "body": "Leadership teams preparing for transaction readiness, investor positioning, diligence preparation or expansion into new cross-border markets."
+            },
+            {
+                "title": "Investors",
+                "body": "Private investors, family offices and funds seeking buy-side support, market mapping, capital structuring input and cross-border transaction screening."
+            },
+            {
+                "title": "Strategic buyers",
+                "body": "Corporates assessing acquisitions, partnerships, carve-outs or market entry opportunities that require disciplined execution across multiple jurisdictions."
+            }
+        ],
+        "typical_situations": [
+            "Preparing for a sale, partial exit or recapitalization",
+            "Raising growth capital while preserving strategic optionality",
+            "Evaluating cross-border acquisitions or bolt-on opportunities",
+            "Identifying strategic partners or investor relationships",
+            "Preparing management teams and materials for due diligence"
+        ],
+        "why_silvercore": [
+            {
+                "title": "Senior-led execution",
+                "body": "Founders and advisors stay directly involved through positioning, outreach, diligence preparation and negotiation support."
+            },
+            {
+                "title": "Selective mandate coverage",
+                "body": "We limit active mandates so every process receives focus, calm pacing and direct decision support."
+            },
+            {
+                "title": "Disciplined process",
+                "body": "Clear materials, targeted market mapping and steady follow-through help reduce noise and improve transaction quality."
+            },
+            {
+                "title": "Cross-border judgment",
+                "body": "We help clients navigate buyer and investor expectations across regions with sharper preparation and clearer communication."
+            }
+        ]
+    },
+    "global_coverage": {
+        "eyebrow": "Global coverage",
+        "title": "Operating markets with active cross-border execution support.",
+        "description": "Silvercore Partners supports transactions and strategic capital conversations across four core operating markets. Each market matters differently in sell-side positioning, buyer outreach, investor fit, diligence preparation and cross-border execution.",
+        "markets": [
+            {
+                "name": "India",
+                "summary": "India remains central to our cross-border M&A and growth capital advisory work, especially for founder-led businesses, strategic buyers and investors seeking operating depth, sector expertise and well-prepared transaction opportunities. We support market mapping, investor positioning and cross-border execution for mandates connected to India’s mid-market and growth ecosystem."
+            },
+            {
+                "name": "United States",
+                "summary": "The United States continues to be a critical market for strategic acquirers, institutional capital and transaction benchmarking. We help clients frame opportunities for U.S. buyers and investors with stronger diligence readiness, clearer positioning and disciplined support through outreach and negotiation."
+            },
+            {
+                "name": "Europe",
+                "summary": "Europe offers deep sector specialization, strategic buyer activity and long-term capital relationships across multiple industries. Silvercore supports cross-border transactions involving Europe with careful attention to buyer fit, governance expectations and market-specific execution considerations."
+            },
+            {
+                "name": "United Kingdom",
+                "summary": "The United Kingdom remains an important market for strategic investors, international capital and advisory-led transactions with global reach. We help companies and investors navigate U.K.-linked opportunities through sharper process discipline, transaction readiness and cross-border coordination."
+            }
         ]
     },
     "about": {
-        "history": "Silvercore Partners was founded to serve companies and investors operating between India, the United States, Europe and the United Kingdom with more precision than broad-market advisory platforms typically offer. The firm began with a simple conviction: cross-border transactions work best when senior advisors stay close to the work, explain trade-offs honestly and resist process for its own sake. Over time, Silvercore developed a reputation for thoughtful mandate selection, careful buyer and investor mapping, and a style of communication that is direct without being theatrical. The team works across founder-led businesses, corporate divestitures, growth financings and strategic partnerships, always balancing ambition with realism. Its philosophy is rooted in transparency, preparation and respect for counterparties. Clients turn to Silvercore when they want seasoned judgment, clear pacing and an advisor who understands both the numbers and the human dynamics behind a transaction.",
+        "history": "Silvercore Partners was built to give cross-border M&A and strategic capital mandates the level of senior attention they often lose inside broader advisory platforms. The firm works across India, the United States, Europe and the United Kingdom, focusing on sell-side advisory, buy-side support, growth capital strategy, strategic partnerships and transaction readiness. Silvercore’s philosophy is simple: clear thinking should come before process, and good execution should feel disciplined rather than theatrical. That means honest conversations around valuation expectations, buyer or investor fit, diligence preparation and the timing required for a credible outcome. The team works selectively so every engagement benefits from close founder involvement, careful market mapping and balanced cross-border judgment. Clients turn to Silvercore when they need experienced support navigating a sale, capital raise, acquisition or strategic partnership with a process that is direct, thoughtful and grounded in real execution support.",
         "philosophy_blocks": [
-            "We prefer informed conversations over exaggerated promises. That means setting expectations early, testing assumptions and helping clients understand how different counterparties will view the same opportunity.",
-            "Our credibility comes from consistency: concise materials, honest feedback, disciplined outreach and a willingness to say no when timing or positioning is not yet right."
+            "We believe strong transaction outcomes come from preparation, candor and disciplined pacing. Clients benefit when their advisor helps test the story, identify buyer or investor fit and prepare management for diligence before momentum becomes fragile.",
+            "Silvercore is built around selective mandate coverage and practical judgment. We focus on clarity, readiness and cross-border execution support so founders, investors and strategic buyers can make better decisions with less noise."
         ],
         "partners": [
             {
-                "name": "Anika Rao",
-                "role": "Partner, Cross-Border M&A",
-                "bio": "Anika spent fourteen years advising founder-led and sponsor-backed businesses on India–U.S. and India–Europe transactions. Her background includes mid-market sell-side mandates, carve-outs and strategic partnership negotiations in industrial, software and healthcare services. She is known for translating complex transaction issues into calm, practical guidance for boards and management teams.",
-                "image": "https://images.pexels.com/photos/35964820/pexels-photo-35964820.jpeg?auto=compress&cs=tinysrgb&w=900"
+                "name": "Nidhi Arora",
+                "role": "Founder & M&A Advisor",
+                "bio": "Nidhi advises founders, family businesses and growth-stage companies on sell-side positioning, growth capital strategy and cross-border transaction readiness. Her work focuses on building clear narratives, improving investor positioning and guiding management teams through diligence preparation, counterpart outreach and senior-level decision points."
             },
             {
-                "name": "Julian Mercer",
-                "role": "Partner, Strategic Capital Advisory",
-                "bio": "Julian previously worked in London and New York advising growth companies, family offices and institutional investors on capital raises, minority investments and structured solutions. He brings particular experience in aligning investor expectations with founder priorities across cross-border situations. Clients value his measured style and strong preparation through diligence and documentation.",
-                "image": "https://images.unsplash.com/photo-1758600587730-a11917c13b85?auto=format&fit=crop&w=900&q=80"
+                "name": "Sameer",
+                "role": "Founder & M&A Advisor",
+                "bio": "Sameer works across buy-side support, strategic partnerships and cross-border execution mandates where disciplined process matters as much as transaction strategy. He helps clients assess buyer and investor fit, structure outreach thoughtfully and manage cross-border pacing through negotiation and execution support."
             },
             {
-                "name": "Elise Hartmann",
-                "role": "Partner, Founder & Growth Advisory",
-                "bio": "Elise has advised scaling businesses entering new markets across Europe and the U.K., with a focus on investor readiness, governance and strategic partnering. Before Silvercore, she supported expansion and financing work for technology and consumer businesses operating across multiple jurisdictions. Her approach combines operational empathy with disciplined capital strategy.",
-                "image": "https://images.pexels.com/photos/10657877/pexels-photo-10657877.jpeg?auto=compress&cs=tinysrgb&w=900"
+                "name": "Sam",
+                "role": "M&A Advisor",
+                "bio": "Sam supports transaction preparation, market mapping and investor communication across mandates involving strategic sales, capital structuring and cross-border opportunities. His focus is on helping clients present materials clearly, anticipate diligence questions and maintain process discipline through each stage of the mandate."
             }
         ]
     },
@@ -81,49 +148,49 @@ SITE_CONTENT = {
         "items": [
             {
                 "title": "M&A Advisory",
-                "description": "We help clients prepare for acquisitions, disposals and strategic combinations with a process that starts from objectives rather than templates. That means sharper positioning, better counterpart selection and fewer wasted conversations. Our role is to keep decision-making grounded as valuation, diligence and deal terms evolve."
+                "description": "We support sell-side advisory and strategic transaction processes with sharper positioning, disciplined buyer mapping and thoughtful pacing. Our work helps clients prepare for valuation discussions, diligence requests and negotiation inflection points with more confidence. The objective is a credible process that improves counterparty fit and execution quality."
             },
             {
                 "title": "Strategic Capital Advisory",
-                "description": "Not every company needs a full sale to unlock its next phase. We advise on growth capital, minority investments and strategic financing paths that preserve flexibility while bringing in the right capital partner. The emphasis is on fit, pacing and structure—not just fundraising momentum."
+                "description": "Not every mandate should lead to a full sale. We advise on growth capital, minority investments and selective capital partnerships with a focus on investor positioning, structure and long-term optionality. That helps boards and founders compare capital routes with more clarity before they commit to a process."
             },
             {
                 "title": "Cross-Border Transactions",
-                "description": "Cross-border deals succeed when regulatory, cultural and process differences are addressed early. We help clients frame their opportunity for counterparties in India, the U.S., Europe and the U.K. without losing the substance behind the story. That creates a smoother path through outreach, diligence and negotiation."
+                "description": "Cross-border mandates require more than introductions across markets. We help clients bridge buyer expectations, investor questions, diligence preparation and execution pacing across India, the U.S., Europe and the U.K. That support reduces friction and keeps strategic conversations moving with clearer context."
             },
             {
                 "title": "Growth & Founder Advisory",
-                "description": "Founders often face strategic choices before they are ready for a formal transaction. We help assess capital options, partnership routes, timing and readiness so leaders can make informed moves without being rushed. The result is clearer decision-making and stronger positioning when opportunities appear."
+                "description": "Founders often need transaction judgment before they formally enter a sale or capital process. We help evaluate timing, readiness, strategic options and partner fit so future decisions are better prepared. This work improves transaction readiness and reduces reactive decision-making later."
             },
             {
                 "title": "Capital Structuring",
-                "description": "A good deal can still underperform if the structure is misaligned with the business and stakeholders. We work through ownership, dilution, liquidity, governance and incentive considerations so terms support long-term outcomes. That discipline helps avoid value leakage after the headline price is agreed."
+                "description": "Headline value rarely tells the whole story in a transaction or capital raise. We work through liquidity, dilution, rollover, governance and incentive alignment so structure supports the strategic objective behind the mandate. Better structure helps preserve value when negotiations become detailed."
             },
             {
                 "title": "Investor Relations",
-                "description": "Investor communication influences credibility long before a boardroom meeting. We help shape materials, narratives and outreach priorities so management teams speak with clarity and consistency. That improves engagement quality and makes follow-up discussions more productive."
+                "description": "Investor communication shapes how seriously a company is evaluated long before diligence intensifies. We help management teams present their case with clearer materials, more consistent messaging and stronger investor positioning. That improves engagement quality across both capital and strategic dialogues."
             }
         ],
         "process": [
             {
                 "phase": "01",
                 "title": "Mandate clarity",
-                "body": "We define the objective, constraints, decision criteria and internal readiness needed for a credible process. Clear scope at the start prevents confusion later."
+                "body": "We define the objective, readiness gaps, counterparty profile and key execution constraints before taking a mandate to market."
             },
             {
                 "phase": "02",
                 "title": "Selective market mapping",
-                "body": "We map counterparties by strategic fit, capital profile and transaction appetite across the relevant geographies. Focused coverage improves signal quality and saves management time."
+                "body": "We map likely buyers, investors and strategic partners by fit, mandate logic and cross-border execution relevance rather than relying on broad outreach."
             },
             {
                 "phase": "03",
                 "title": "Execution discipline",
-                "body": "We manage materials, timing, diligence flow and negotiation rhythm with steady communication. The goal is controlled momentum, not unnecessary theater."
+                "body": "We support materials, diligence preparation, process pacing and negotiation discipline so momentum stays credible through the critical stages of a transaction."
             }
         ]
     },
     "investments": {
-        "intro": "Our mandates span strategic and capital-led situations where cross-border context matters. The categories below reflect common client needs and can be filtered by geography, sector and deal size.",
+        "intro": "Our mandates span sell-side advisory, buy-side support, growth capital, strategic partnerships and private investment situations where cross-border context matters. Filter the categories below by geography, sector and deal size to explore how Silvercore typically supports each type of mandate.",
         "categories": [
             {
                 "slug": "ma-transactions",
@@ -132,7 +199,7 @@ SITE_CONTENT = {
                 "deal_size_band": "mid-market",
                 "geographies": ["India", "United States", "Europe", "United Kingdom"],
                 "sectors": ["Technology", "Healthcare", "Industrials"],
-                "outcome": "Clients can expect a structured path to strategic sale, acquisition or merger discussions with clearer valuation framing and stronger buyer fit."
+                "outcome": "Clients can expect sharper sell-side positioning, more focused buyer mapping, disciplined diligence preparation and stronger cross-border execution support through negotiation."
             },
             {
                 "slug": "growth-capital",
@@ -141,7 +208,7 @@ SITE_CONTENT = {
                 "deal_size_band": "growth",
                 "geographies": ["India", "United States", "United Kingdom"],
                 "sectors": ["Technology", "Consumer", "Financial Services"],
-                "outcome": "The objective is to match businesses with patient capital that supports expansion, governance development and optionality for future strategic events."
+                "outcome": "The objective is to align companies with the right investors, improve investor positioning and structure capital conversations around long-term flexibility rather than short-term momentum."
             },
             {
                 "slug": "cross-border-expansion",
@@ -150,7 +217,7 @@ SITE_CONTENT = {
                 "deal_size_band": "expansion",
                 "geographies": ["India", "Europe", "United Kingdom"],
                 "sectors": ["Healthcare", "Consumer", "Industrial Tech"],
-                "outcome": "Companies gain partner and market-entry pathways that reduce friction around capital, local relationships and transaction sequencing."
+                "outcome": "Companies gain strategic support around partner selection, market entry logic, investor fit and cross-border transaction sequencing as they evaluate new growth pathways."
             },
             {
                 "slug": "strategic-partnerships",
@@ -159,7 +226,7 @@ SITE_CONTENT = {
                 "deal_size_band": "selective",
                 "geographies": ["India", "United States", "Europe"],
                 "sectors": ["Enterprise Software", "Logistics", "Advanced Manufacturing"],
-                "outcome": "These mandates aim to unlock distribution, co-development, market access or capital-light growth through carefully aligned counterparties."
+                "outcome": "These situations focus on identifying partner fit, clarifying commercial logic and supporting disciplined execution for alliances that unlock market access or capability expansion."
             },
             {
                 "slug": "private-investments",
@@ -168,15 +235,15 @@ SITE_CONTENT = {
                 "deal_size_band": "private-capital",
                 "geographies": ["United States", "Europe", "United Kingdom"],
                 "sectors": ["Business Services", "Financial Services", "Technology"],
-                "outcome": "Investors and companies receive sharper screening, clearer structure discussions and better alignment on governance and exit expectations."
+                "outcome": "Investors and companies receive more structured screening, clearer capital structuring discussions and better alignment on governance, diligence readiness and execution pacing."
             }
         ]
     },
     "insights": {
         "clusters": [
-            {"title": "India–U.S. deals", "description": "Themes shaping founder liquidity, capital raising and strategic acquisitions across the busiest corridor."},
-            {"title": "Capital structuring signals", "description": "How preferred instruments, governance rights and timing decisions are evolving in 2026."},
-            {"title": "Europe and U.K. investor perspectives", "description": "What regional investors are prioritizing in diligence, sector selection and transaction pacing."}
+            {"title": "India–U.S. deals", "description": "Themes shaping founder liquidity, strategic sales, growth capital and acquisition appetite across one of the most active cross-border corridors."},
+            {"title": "Capital structuring signals", "description": "How governance rights, rollover mechanics, minority capital terms and transaction pacing are evolving in 2026."},
+            {"title": "Europe and U.K. investor perspectives", "description": "What European and U.K. investors are prioritizing in diligence readiness, sector selection and cross-border execution support."}
         ],
         "posts": [
             {
@@ -233,50 +300,36 @@ SITE_CONTENT = {
         "faqs": [
             {
                 "question": "What makes a cross-border M&A process different from a domestic process?",
-                "answer": "Cross-border transactions involve more than additional documents or time zones. Buyers and investors often interpret risk, governance and decision authority differently across jurisdictions, so preparation must address communication style, regulatory friction and integration expectations from the beginning."
+                "answer": "Cross-border transactions involve more than extra documents or time zones. Buyers and investors often view governance, diligence readiness, integration risk and decision authority differently across regions, so preparation has to address both market fit and execution support from the start."
             },
             {
-                "question": "When should a founder start preparing for a strategic sale or capital raise?",
-                "answer": "Preparation usually works best well before an active process begins. Founders benefit from early work on reporting quality, internal decision rights, management depth and investor narrative so discussions start from confidence rather than urgency."
+                "question": "When should a founder start preparing for a strategic sale or growth capital process?",
+                "answer": "Preparation usually works best well before a live process begins. Founders benefit from early work on reporting quality, management depth, investor positioning, diligence preparation and transaction objectives so conversations start from readiness rather than urgency."
             },
             {
-                "question": "How do firms evaluate the right buyers or investors across regions?",
-                "answer": "A strong market map looks beyond brand names. It weighs sector fit, transaction history, capital appetite, geographic relevance and cultural compatibility so outreach is focused on parties who can engage seriously and move with the right intent."
+                "question": "How do advisors identify the right buyers or investors across regions?",
+                "answer": "A disciplined market map looks beyond brand names. It weighs sector logic, transaction history, strategic fit, capital appetite, geographic relevance and cross-border execution capability so outreach is focused on serious counterparties with the right mandate logic."
             }
         ]
     },
     "contact": {
-        "intro": "If you are evaluating a transaction, partnership or capital strategy, send us a short note. We review every inquiry directly and respond with clear next steps.",
-        "offices": [
+        "intro": "If you are evaluating a sale, growth capital raise, strategic partnership, buy-side opportunity or transaction readiness project, send us a concise note. Enquiries are reviewed directly by the founders, with follow-up shaped around your transaction objectives, capital goals and cross-border context.",
+        "review_note": "A short summary of your business, sector, size range and transaction or capital goals will help us respond more constructively.",
+        "emails": [
             {
-                "region": "India",
-                "city": "Mumbai",
-                "address": "Silvercore Partners, 11th Floor, One BKC Annex, Bandra Kurla Complex, Mumbai 400051, India",
-                "phone": "+91 22 6112 4800",
-                "image": "https://images.unsplash.com/photo-1652106032456-fc4ce369b1c9?auto=format&fit=crop&w=900&q=80"
+                "label": "Primary contact",
+                "address": "info@silvercorepartner.com"
             },
             {
-                "region": "United States",
-                "city": "New York",
-                "address": "Silvercore Partners, 350 Park Avenue, Suite 1200, New York, NY 10022, United States",
-                "phone": "+1 212 555 0188",
-                "image": "https://images.pexels.com/photos/31710856/pexels-photo-31710856.jpeg?auto=compress&cs=tinysrgb&w=900"
-            },
-            {
-                "region": "Europe",
-                "city": "Frankfurt",
-                "address": "Silvercore Partners, Taunusanlage 8, 60329 Frankfurt am Main, Germany",
-                "phone": "+49 69 1532 7440",
-                "image": "https://images.pexels.com/photos/18852209/pexels-photo-18852209.jpeg?auto=compress&cs=tinysrgb&w=900"
-            },
-            {
-                "region": "United Kingdom",
-                "city": "London",
-                "address": "Silvercore Partners, 24 St James's Square, London SW1Y 4JH, United Kingdom",
-                "phone": "+44 20 4518 2206",
-                "image": "https://images.unsplash.com/photo-1758216863138-96ec40dac9c4?auto=format&fit=crop&w=900&q=80"
+                "label": "Secondary contact",
+                "address": "contact@silvercorepartner.com"
             }
-        ]
+        ],
+        "whatsapp": {
+            "display": "+1 (367) 219-6085",
+            "message": "Hi, I’d like to discuss a cross-border M&A / strategic advisory opportunity with Silvercore Partners.",
+            "url": "https://wa.me/13672196085?text=Hi%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20cross-border%20M%26A%20%2F%20strategic%20advisory%20opportunity%20with%20Silvercore%20Partners."
+        }
     },
     "legal": {
         "privacy": {
@@ -322,8 +375,8 @@ SITE_CONTENT = {
                     "body": "Unless otherwise noted, website text, design, branding and related materials are the property of Silvercore Partners and may not be reproduced or distributed without prior written permission. Limited personal, non-commercial use is permitted for informational review."
                 },
                 {
-                    "heading": "AI Assistant Disclaimer",
-                    "body": "Any chatbot or AI-generated output available through this website is intended solely for general educational guidance. It is not financial, legal, tax or transactional advice and should not be treated as a substitute for professional judgment tailored to your circumstances."
+                    "heading": "M&A Advisor Disclaimer",
+                    "body": "Any chatbot or AI-generated output available through this website is intended solely for general information. It does not constitute legal, tax, investment or regulatory advice and should not be treated as a substitute for professional judgment tailored to your circumstances."
                 },
                 {
                     "heading": "Limitation of Liability",
@@ -333,8 +386,8 @@ SITE_CONTENT = {
         }
     },
     "chat": {
-        "disclaimer": "Educational guidance only. Not financial or legal advice.",
-        "welcome_message": "Welcome to Silvercore Partners. I can help with general cross-border M&A questions. To start, what kind of business are you working with, which sector are you in, what size range are you considering, and what is your main goal?",
+        "disclaimer": "This chat provides general information only and does not constitute legal, tax, investment or regulatory advice.",
+        "welcome_message": "Welcome to Silvercore Partners. I’m the M&A Advisor and can help with general questions on process, capital strategy, buyer or investor fit, transaction pacing and cross-border advisory. To begin, what kind of business are you working with, which sector are you in, what size range are you considering, and what is your main goal?",
         "suggested_prompts": [
             "Summarize the typical steps in a cross-border M&A process between India and the U.S.",
             "Explain the difference between growth capital and private equity investment.",
