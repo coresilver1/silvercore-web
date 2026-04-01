@@ -44,6 +44,15 @@ Build a boutique M&A advisory website called Silvercore Partners for cross-borde
 - Updated README with local run instructions, chat pseudocode, route summary and security notes
 - Fixed chatbot launcher overlap discovered in testing by repositioning the floating widget and verifying the full UI flow
 
+### 2026-04-01 — Content and contact refinement update
+- Removed all office addresses, city cards and location-based phone references from the site
+- Replaced location sections with a Global Coverage / Operating Markets section for India, United States, Europe and United Kingdom
+- Updated team profiles to Nidhi Arora, Sameer and Sam, and replaced photos with premium illustrated avatar placeholders
+- Renamed the chatbot experience to “M&A Advisor” across launcher, panel text, helper copy and fallback responses
+- Added floating WhatsApp contact, WhatsApp CTAs in the contact page and footer, and prominent email contact links for `info@silvercorepartner.com` and `contact@silvercorepartner.com`
+- Enriched homepage messaging with Who We Work With, Typical Situations We Support and Why Silvercore sections using stronger M&A-specific language
+- Refocused the contact page around the enquiry form, direct founder-reviewed contact channels and operating markets
+
 ## Validation Notes
 - Self-tested backend endpoints through the external API URL
 - Self-tested frontend routing and chatbot open/send behavior using Playwright screenshots
@@ -58,6 +67,7 @@ Build a boutique M&A advisory website called Silvercore Partners for cross-borde
 - Add editor-managed CMS or admin interface for blog posts, partner bios and legal content
 - Add optional email notification delivery for new contact submissions
 - Add richer article detail pages and internal linking between topic clusters
+- Revisit optional platform-controlled external branding only if a non-code setting becomes available
 
 ### P2
 - Add case studies and deal tombstones section
