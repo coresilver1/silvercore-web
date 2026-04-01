@@ -72,7 +72,7 @@ export const AiAdvisorChat = ({ chat, brand }) => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3" data-testid="ai-chat-widget">
+    <div className="fixed bottom-28 right-4 z-[80] flex max-w-[calc(100vw-2rem)] flex-col items-end gap-3 sm:bottom-28 sm:right-6" data-testid="ai-chat-widget">
       {isOpen && (
         <div className="w-[360px] max-w-full border border-white/10 bg-[#0b1221]/90 p-4 shadow-[0_24px_80px_rgba(2,6,23,0.65)] backdrop-blur-2xl" data-testid="ai-chat-panel">
           <div className="flex items-start justify-between gap-3 border-b border-white/10 pb-4">
