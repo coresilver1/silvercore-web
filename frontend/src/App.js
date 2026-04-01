@@ -29,7 +29,7 @@ const LoadingState = () => (
     <div className="mx-auto flex min-h-[70vh] max-w-3xl items-center justify-center border border-white/10 bg-white/[0.03] px-8 text-center shadow-[0_30px_100px_rgba(5,8,20,0.55)]">
       <div>
         <p className="text-sm uppercase tracking-[0.35em] text-sky-300" data-testid="loading-eyebrow">
-          Silvercore Partners
+          Silver Core Partners
         </p>
         <h1 className="mt-4 font-['Cormorant_Garamond'] text-4xl tracking-tight" data-testid="loading-heading">
           Preparing the advisory experience...
@@ -46,7 +46,7 @@ const ErrorState = ({ onRetry }) => (
         Connection issue
       </p>
       <h1 className="mt-4 font-['Cormorant_Garamond'] text-4xl tracking-tight" data-testid="error-heading">
-        We couldn’t load the Silvercore site content.
+        We couldn’t load the Silver Core site content.
       </h1>
       <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300" data-testid="error-message">
         Please retry. If the issue continues, the backend may still be reloading.

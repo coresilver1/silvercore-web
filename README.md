@@ -1,6 +1,6 @@
-# Silvercore Partners
+# Silver Core Partners
 
-Silvercore Partners is a premium boutique M&A advisory website built with a React frontend, FastAPI backend and MongoDB. It includes a multi-page editorial-style experience, structured content for services and insights, a database-backed contact workflow and an AI advisor chat interface ready for OpenAI GPT-5.2.
+Silver Core Partners is a premium boutique M&A advisory website built with a React frontend, FastAPI backend and MongoDB. It includes a multi-page editorial-style experience, structured content for services and insights, a database-backed contact workflow and an AI advisor chat interface ready for OpenAI GPT-5.2.
 
 ## Features
 
@@ -95,7 +95,7 @@ async def chat(payload):
     session_id = payload.session_id or generate_uuid()
     history = await db.chat_sessions.find_one({"session_id": session_id}, {"_id": 0})
     prompt = build_system_prompt(
-        role="Silvercore M&A advisory assistant",
+        role="Silver Core M&A advisory assistant",
         guardrails="educational guidance only, no financial or legal advice"
     )
 

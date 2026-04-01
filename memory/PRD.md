@@ -1,7 +1,7 @@
-# Silvercore Partners PRD
+# Silver Core Partners PRD
 
 ## Original Problem Statement
-Build a boutique M&A advisory website called Silvercore Partners for cross-border deals across India, the U.S., Europe and the U.K. The site must include Home, About, Services, Investments, Insights/blog, Contact, Privacy Policy and Terms pages; SEO-friendly content blocks; JSON-LD structured data; a bottom-corner AI M&A advisor chat; backend pseudocode and API route guidance for OpenAI chat; and a full README. Tone: professional, approachable, precise and free from buzzwords.
+Build a boutique M&A advisory website called Silver Core Partners for cross-border deals across India, the U.S., Europe and the U.K. The site must include Home, About, Services, Investments, Insights/blog, Contact, Privacy Policy and Terms pages; SEO-friendly content blocks; JSON-LD structured data; a bottom-corner AI M&A advisor chat; backend pseudocode and API route guidance for OpenAI chat; and a full README. Tone: professional, approachable, precise and free from buzzwords.
 
 ## User Choices
 - OpenAI GPT-5.2 selected for the AI advisor
@@ -34,7 +34,7 @@ Build a boutique M&A advisory website called Silvercore Partners for cross-borde
 
 ## What’s Been Implemented
 ### 2026-04-01
-- Built full Silvercore Partners frontend with routes for Home, About, Services, Investments, Insights, Contact, Privacy Policy and Terms of Service
+- Built full Silver Core Partners frontend with routes for Home, About, Services, Investments, Insights, Contact, Privacy Policy and Terms of Service
 - Wrote bespoke advisory copy, partner bios, 10 insight summaries, FAQs, office details and legal content
 - Implemented deep navy premium visual system with editorial typography, premium imagery and purposeful animations
 - Added JSON-LD structured data for organization, services and article content
@@ -50,8 +50,12 @@ Build a boutique M&A advisory website called Silvercore Partners for cross-borde
 - Updated team profiles to Nidhi Arora, Sameer and Sam, and replaced photos with premium illustrated avatar placeholders
 - Renamed the chatbot experience to “M&A Advisor” across launcher, panel text, helper copy and fallback responses
 - Added floating WhatsApp contact, WhatsApp CTAs in the contact page and footer, and prominent email contact links for `info@silvercorepartner.com` and `contact@silvercorepartner.com`
-- Enriched homepage messaging with Who We Work With, Typical Situations We Support and Why Silvercore sections using stronger M&A-specific language
+- Enriched homepage messaging with Who We Work With, Typical Situations We Support and Why Silver Core sections using stronger M&A-specific language
 - Refocused the contact page around the enquiry form, direct founder-reviewed contact channels and operating markets
+
+### 2026-04-01 — Final branding alignment update
+- Updated the public-facing company name across the site from “Silvercore Partners” to “Silver Core Partners” including navigation, logo, metadata, contact copy and chatbot welcome text
+- Simplified the floating WhatsApp button to an icon-only launcher while preserving WhatsApp CTAs in the contact page and footer
 
 ## Validation Notes
 - Self-tested backend endpoints through the external API URL

@@ -7,8 +7,8 @@ export default function AboutPage({ content }) {
   return (
     <>
       <SeoHead
-        title="About Silvercore Partners"
-        description="Learn about Silvercore Partners, our philosophy and the senior advisors behind our cross-border M&A practice."
+        title="About Silver Core Partners"
+        description="Learn about Silver Core Partners, our philosophy and the senior advisors behind our cross-border M&A practice."
         structuredData={[buildOrganizationSchema(content)]}
       />
 
@@ -17,7 +17,7 @@ export default function AboutPage({ content }) {
           <SectionHeader
             eyebrow="About the firm"
             title="Transparent advice, senior attention and realistic pacing."
-            description="Silvercore Partners was built for clients who want clear judgment, credible preparation and an advisory relationship grounded in authenticity rather than spectacle."
+            description="Silver Core Partners was built for clients who want clear judgment, credible preparation and an advisory relationship grounded in authenticity rather than spectacle."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
@@ -45,7 +45,7 @@ export default function AboutPage({ content }) {
         <div className="mx-auto max-w-7xl">
           <SectionHeader
             eyebrow="Founders & team"
-            title="The advisors behind Silvercore’s cross-border mandate work."
+            title="The advisors behind Silver Core’s cross-border mandate work."
             description="The team section now uses premium illustrated placeholders to keep the visual language clean, consistent and credible while the firm finalizes portrait photography."
           />
 

@@ -9,9 +9,9 @@ SITE_CONTENT = {
     "slug": "silvercore-site-content",
     "updated_at": iso_now(),
     "brand": {
-        "name": "Silvercore Partners",
+        "name": "Silver Core Partners",
         "tagline": "Cross-border M&A clarity across India, the United States, Europe and the United Kingdom.",
-        "mission": "Silvercore Partners advises founders, family businesses, growth-stage companies, investors and strategic buyers on sell-side advisory, buy-side support, growth capital advisory, capital structuring, investor positioning and disciplined cross-border execution support. We stay selective so every mandate receives founder-level attention, thoughtful market mapping and senior-led judgment from preparation through negotiation.",
+        "mission": "Silver Core Partners advises founders, family businesses, growth-stage companies, investors and strategic buyers on sell-side advisory, buy-side support, growth capital advisory, capital structuring, investor positioning and disciplined cross-border execution support. We stay selective so every mandate receives founder-level attention, thoughtful market mapping and senior-led judgment from preparation through negotiation.",
         "description": "Boutique M&A advisory firm focused on sell-side, buy-side, growth capital and cross-border execution support across India, the United States, Europe and the United Kingdom.",
         "regions": ["India", "United States", "Europe", "United Kingdom"],
         "metrics": [
@@ -37,7 +37,7 @@ SITE_CONTENT = {
             },
             {
                 "title": "Selective coverage",
-                "body": "Silvercore accepts a limited number of mandates at a time. That selectivity keeps buyer and investor outreach focused, materials sharper and management time protected."
+                "body": "Silver Core accepts a limited number of mandates at a time. That selectivity keeps buyer and investor outreach focused, materials sharper and management time protected."
             },
             {
                 "title": "Cross-border judgment",
@@ -100,7 +100,7 @@ SITE_CONTENT = {
     "global_coverage": {
         "eyebrow": "Global coverage",
         "title": "Operating markets with active cross-border execution support.",
-        "description": "Silvercore Partners supports transactions and strategic capital conversations across four core operating markets. Each market matters differently in sell-side positioning, buyer outreach, investor fit, diligence preparation and cross-border execution.",
+        "description": "Silver Core Partners supports transactions and strategic capital conversations across four core operating markets. Each market matters differently in sell-side positioning, buyer outreach, investor fit, diligence preparation and cross-border execution.",
         "markets": [
             {
                 "name": "India",
@@ -112,7 +112,7 @@ SITE_CONTENT = {
             },
             {
                 "name": "Europe",
-                "summary": "Europe offers deep sector specialization, strategic buyer activity and long-term capital relationships across multiple industries. Silvercore supports cross-border transactions involving Europe with careful attention to buyer fit, governance expectations and market-specific execution considerations."
+                "summary": "Europe offers deep sector specialization, strategic buyer activity and long-term capital relationships across multiple industries. Silver Core supports cross-border transactions involving Europe with careful attention to buyer fit, governance expectations and market-specific execution considerations."
             },
             {
                 "name": "United Kingdom",
@@ -121,10 +121,10 @@ SITE_CONTENT = {
         ]
     },
     "about": {
-        "history": "Silvercore Partners was built to give cross-border M&A and strategic capital mandates the level of senior attention they often lose inside broader advisory platforms. The firm works across India, the United States, Europe and the United Kingdom, focusing on sell-side advisory, buy-side support, growth capital strategy, strategic partnerships and transaction readiness. Silvercore’s philosophy is simple: clear thinking should come before process, and good execution should feel disciplined rather than theatrical. That means honest conversations around valuation expectations, buyer or investor fit, diligence preparation and the timing required for a credible outcome. The team works selectively so every engagement benefits from close founder involvement, careful market mapping and balanced cross-border judgment. Clients turn to Silvercore when they need experienced support navigating a sale, capital raise, acquisition or strategic partnership with a process that is direct, thoughtful and grounded in real execution support.",
+        "history": "Silver Core Partners was built to give cross-border M&A and strategic capital mandates the level of senior attention they often lose inside broader advisory platforms. The firm works across India, the United States, Europe and the United Kingdom, focusing on sell-side advisory, buy-side support, growth capital strategy, strategic partnerships and transaction readiness. Silver Core’s philosophy is simple: clear thinking should come before process, and good execution should feel disciplined rather than theatrical. That means honest conversations around valuation expectations, buyer or investor fit, diligence preparation and the timing required for a credible outcome. The team works selectively so every engagement benefits from close founder involvement, careful market mapping and balanced cross-border judgment. Clients turn to Silver Core when they need experienced support navigating a sale, capital raise, acquisition or strategic partnership with a process that is direct, thoughtful and grounded in real execution support.",
         "philosophy_blocks": [
             "We believe strong transaction outcomes come from preparation, candor and disciplined pacing. Clients benefit when their advisor helps test the story, identify buyer or investor fit and prepare management for diligence before momentum becomes fragile.",
-            "Silvercore is built around selective mandate coverage and practical judgment. We focus on clarity, readiness and cross-border execution support so founders, investors and strategic buyers can make better decisions with less noise."
+            "Silver Core is built around selective mandate coverage and practical judgment. We focus on clarity, readiness and cross-border execution support so founders, investors and strategic buyers can make better decisions with less noise."
         ],
         "partners": [
             {
@@ -190,7 +190,7 @@ SITE_CONTENT = {
         ]
     },
     "investments": {
-        "intro": "Our mandates span sell-side advisory, buy-side support, growth capital, strategic partnerships and private investment situations where cross-border context matters. Filter the categories below by geography, sector and deal size to explore how Silvercore typically supports each type of mandate.",
+        "intro": "Our mandates span sell-side advisory, buy-side support, growth capital, strategic partnerships and private investment situations where cross-border context matters. Filter the categories below by geography, sector and deal size to explore how Silver Core typically supports each type of mandate.",
         "categories": [
             {
                 "slug": "ma-transactions",
@@ -327,8 +327,8 @@ SITE_CONTENT = {
         ],
         "whatsapp": {
             "display": "+1 (367) 219-6085",
-            "message": "Hi, I’d like to discuss a cross-border M&A / strategic advisory opportunity with Silvercore Partners.",
-            "url": "https://wa.me/13672196085?text=Hi%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20cross-border%20M%26A%20%2F%20strategic%20advisory%20opportunity%20with%20Silvercore%20Partners."
+            "message": "Hi, I’d like to discuss a cross-border M&A / strategic advisory opportunity with Silver Core Partners.",
+            "url": "https://wa.me/13672196085?text=Hi%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20cross-border%20M%26A%20%2F%20strategic%20advisory%20opportunity%20with%20Silver%20Core%20Partners."
         }
     },
     "legal": {
@@ -338,7 +338,7 @@ SITE_CONTENT = {
             "sections": [
                 {
                     "heading": "Information We Collect",
-                    "body": "Silvercore Partners collects the information you choose to provide through contact forms, advisory inquiries and website interactions. This may include your name, email address, company or fund name, region and message content, along with limited technical usage data required for security and analytics."
+                    "body": "Silver Core Partners collects the information you choose to provide through contact forms, advisory inquiries and website interactions. This may include your name, email address, company or fund name, region and message content, along with limited technical usage data required for security and analytics."
                 },
                 {
                     "heading": "How We Use Information",
@@ -364,7 +364,7 @@ SITE_CONTENT = {
             "sections": [
                 {
                     "heading": "Website Purpose",
-                    "body": "This website provides general information about Silvercore Partners and its advisory capabilities. Content is offered for informational purposes only and does not constitute financial, legal, tax or investment advice, nor does it create an advisory relationship."
+                    "body": "This website provides general information about Silver Core Partners and its advisory capabilities. Content is offered for informational purposes only and does not constitute financial, legal, tax or investment advice, nor does it create an advisory relationship."
                 },
                 {
                     "heading": "No Reliance or Offer",
@@ -372,7 +372,7 @@ SITE_CONTENT = {
                 },
                 {
                     "heading": "Intellectual Property",
-                    "body": "Unless otherwise noted, website text, design, branding and related materials are the property of Silvercore Partners and may not be reproduced or distributed without prior written permission. Limited personal, non-commercial use is permitted for informational review."
+                    "body": "Unless otherwise noted, website text, design, branding and related materials are the property of Silver Core Partners and may not be reproduced or distributed without prior written permission. Limited personal, non-commercial use is permitted for informational review."
                 },
                 {
                     "heading": "M&A Advisor Disclaimer",
@@ -380,14 +380,14 @@ SITE_CONTENT = {
                 },
                 {
                     "heading": "Limitation of Liability",
-                    "body": "To the fullest extent permitted by law, Silvercore Partners disclaims liability for losses arising from use of this website, reliance on its content or temporary service interruptions. Use of the website is at your own risk and subject to applicable law."
+                    "body": "To the fullest extent permitted by law, Silver Core Partners disclaims liability for losses arising from use of this website, reliance on its content or temporary service interruptions. Use of the website is at your own risk and subject to applicable law."
                 }
             ]
         }
     },
     "chat": {
         "disclaimer": "This chat provides general information only and does not constitute legal, tax, investment or regulatory advice.",
-        "welcome_message": "Welcome to Silvercore Partners. I’m the M&A Advisor and can help with general questions on process, capital strategy, buyer or investor fit, transaction pacing and cross-border advisory. To begin, what kind of business are you working with, which sector are you in, what size range are you considering, and what is your main goal?",
+        "welcome_message": "Welcome to Silver Core Partners. I’m the M&A Advisor and can help with general questions on process, capital strategy, buyer or investor fit, transaction pacing and cross-border advisory. To begin, what kind of business are you working with, which sector are you in, what size range are you considering, and what is your main goal?",
         "suggested_prompts": [
             "Summarize the typical steps in a cross-border M&A process between India and the U.S.",
             "Explain the difference between growth capital and private equity investment.",

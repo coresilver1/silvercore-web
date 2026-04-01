@@ -87,7 +87,7 @@ async def get_site_content() -> Dict[str, Any]:
 
 def build_chat_system_prompt() -> str:
     return (
-        "You are Silvercore Partners' M&A advisory assistant. "
+        "You are Silver Core Partners' M&A advisory assistant. "
         "Provide general educational guidance only about cross-border M&A, growth capital, "
         "capital structuring, investor relations, strategic partnerships and founder readiness. "
         "Ask clarifying questions when information is missing, especially about business type, "
@@ -154,7 +154,7 @@ async def save_chat_messages(
 @api_router.get("/")
 async def root():
     return {
-        "message": "Silvercore Partners API is running.",
+        "message": "Silver Core Partners API is running.",
         "service": "silvercore-partners",
     }
 
@@ -177,7 +177,7 @@ async def create_contact_submission(payload: ContactSubmission):
     await db.contact_messages.insert_one(document)
     return ContactSubmissionResponse(
         success=True,
-        message="Thank you. A Silvercore advisor will review your note and respond with next steps.",
+        message="Thank you. A Silver Core advisor will review your note and respond with next steps.",
         submission_id=submission_id,
     )
 

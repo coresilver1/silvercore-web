@@ -43,8 +43,8 @@ export default function ContactPage({ content }) {
   return (
     <>
       <SeoHead
-        title="Contact Silvercore Partners"
-        description="Contact Silvercore Partners to discuss sell-side advisory, buy-side support, growth capital strategy and cross-border M&A opportunities."
+        title="Contact Silver Core Partners"
+        description="Contact Silver Core Partners to discuss sell-side advisory, buy-side support, growth capital strategy and cross-border M&A opportunities."
         structuredData={[buildOrganizationSchema(content)]}
       />
 

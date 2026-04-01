@@ -8,8 +8,8 @@ export default function PrivacyPage({ content }) {
   return (
     <>
       <SeoHead
-        title="Privacy Policy | Silvercore Partners"
-        description="Read the Silvercore Partners privacy policy for advisory inquiries, website usage and communication records."
+        title="Privacy Policy | Silver Core Partners"
+        description="Read the Silver Core Partners privacy policy for advisory inquiries, website usage and communication records."
         structuredData={[buildOrganizationSchema(content)]}
       />
 
@@ -18,7 +18,7 @@ export default function PrivacyPage({ content }) {
           <SectionHeader
             eyebrow="Legal"
             title={privacy.title}
-            description={`Last updated ${privacy.updated}. This policy explains how Silvercore Partners collects, uses and protects information shared through this website.`}
+            description={`Last updated ${privacy.updated}. This policy explains how Silver Core Partners collects, uses and protects information shared through this website.`}
           />
 
           <div className="mt-12 space-y-6">

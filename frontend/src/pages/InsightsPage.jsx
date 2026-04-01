@@ -12,8 +12,8 @@ export default function InsightsPage({ content }) {
   return (
     <>
       <SeoHead
-        title="Insights | Silvercore Partners"
-        description="Explore 2026 cross-border M&A insights, topic clusters and search-friendly FAQs from Silvercore Partners."
+        title="Insights | Silver Core Partners"
+        description="Explore 2026 cross-border M&A insights, topic clusters and search-friendly FAQs from Silver Core Partners."
         structuredData={[buildOrganizationSchema(content), buildArticlesSchema(content)]}
       />
 

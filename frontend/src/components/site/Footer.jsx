@@ -7,7 +7,7 @@ export const Footer = ({ brand, contact, globalCoverage }) => {
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.2fr_1fr]">
         <div>
           <p className="text-xs uppercase tracking-[0.35em] text-sky-300" data-testid="footer-eyebrow">
-            Silvercore Partners
+            Silver Core Partners
           </p>
           <h2 className="mt-4 max-w-2xl font-['Cormorant_Garamond'] text-4xl tracking-tight" data-testid="footer-heading">
             Professional guidance for cross-border decisions that demand clarity.

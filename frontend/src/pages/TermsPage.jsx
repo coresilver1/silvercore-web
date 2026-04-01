@@ -8,8 +8,8 @@ export default function TermsPage({ content }) {
   return (
     <>
       <SeoHead
-        title="Terms of Service | Silvercore Partners"
-        description="Review the Silvercore Partners terms governing website use, informational content and AI assistant output."
+        title="Terms of Service | Silver Core Partners"
+        description="Review the Silver Core Partners terms governing website use, informational content and AI assistant output."
         structuredData={[buildOrganizationSchema(content)]}
       />
 

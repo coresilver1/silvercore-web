@@ -32,8 +32,8 @@ export default function InvestmentsPage({ content }) {
   return (
     <>
       <SeoHead
-        title="Investments | Silvercore Partners"
-        description="Filter Silvercore Partners investment and transaction categories by geography, sector and deal size."
+        title="Investments | Silver Core Partners"
+        description="Filter Silver Core Partners investment and transaction categories by geography, sector and deal size."
         structuredData={[buildOrganizationSchema(content)]}
       />
 

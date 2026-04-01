@@ -39,13 +39,13 @@ def api_client():
     return session
 
 
-# Core backend route checks for Silvercore public API.
+# Core backend route checks for Silver Core public API.
 def test_get_site_content_structure(api_client):
     response = api_client.get(f"{BASE_URL}/api/site-content", timeout=20)
     assert response.status_code == 200
 
     data = response.json()
-    assert data["brand"]["name"] == "Silvercore Partners"
+    assert data["brand"]["name"] == "Silver Core Partners"
     assert data["brand"]["regions"] == ["India", "United States", "Europe", "United Kingdom"]
 
     # Team and contact updates requested in latest scope.
@@ -73,7 +73,7 @@ def test_post_contact_submission_success(api_client):
     payload = {
         "name": "TEST QA Reviewer",
         "email": "qa.reviewer+silvercore@example.com",
-        "company": "TEST Silvercore QA",
+        "company": "TEST Silver Core QA",
         "region": "India",
         "message": "TEST contact submission for backend regression.",
     }
@@ -83,7 +83,7 @@ def test_post_contact_submission_success(api_client):
     data = response.json()
     assert data["success"] is True
     assert "submission_id" in data and isinstance(data["submission_id"], str) and len(data["submission_id"]) > 10
-    assert "Silvercore advisor" in data["message"]
+    assert "Silver Core advisor" in data["message"]
 
 
 # Chat endpoint fallback check when OPENAI_API_KEY is intentionally blank.

@@ -11,8 +11,8 @@ export default function HomePage({ content }) {
   return (
     <>
       <SeoHead
-        title="Silvercore Partners | Cross-Border M&A Advisory"
-        description="Silvercore Partners advises on cross-border M&A, strategic capital and growth decisions across India, the U.S., Europe and the U.K."
+        title="Silver Core Partners | Cross-Border M&A Advisory"
+        description="Silver Core Partners advises on cross-border M&A, strategic capital and growth decisions across India, the U.S., Europe and the U.K."
         structuredData={[buildOrganizationSchema(content)]}
       />
 
@@ -49,7 +49,7 @@ export default function HomePage({ content }) {
             <div className="flex h-full flex-col justify-end">
               <img
                 src={content.home.hero.image}
-                alt="Silvercore Partners cross-border M&A advisory"
+                alt="Silver Core Partners cross-border M&A advisory"
                 className="h-full min-h-[460px] w-full object-cover object-center"
                 data-testid="home-hero-image"
               />
@@ -83,7 +83,7 @@ export default function HomePage({ content }) {
           <SectionHeader
             eyebrow="Advisory approach"
             title="Built for thoughtful mandates, not mass-market process."
-            description="Silvercore’s mandate style is deliberate: concise strategy, carefully chosen counterparties and senior advisors present throughout the moments where structure, timing and tone influence outcomes."
+            description="Silver Core’s mandate style is deliberate: concise strategy, carefully chosen counterparties and senior advisors present throughout the moments where structure, timing and tone influence outcomes."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
@@ -131,7 +131,7 @@ export default function HomePage({ content }) {
           <SectionHeader
             eyebrow="Who we work with"
             title="Advisory support for founders, investors and strategic decision-makers."
-            description="Silvercore supports mandates where strategic context, capital strategy and cross-border execution need to work together rather than in isolation."
+            description="Silver Core supports mandates where strategic context, capital strategy and cross-border execution need to work together rather than in isolation."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
@@ -165,7 +165,7 @@ export default function HomePage({ content }) {
           </div>
 
           <div className="editorial-frame p-8 lg:p-10" data-testid="home-why-silvercore-card">
-            <p className="text-xs uppercase tracking-[0.35em] text-sky-300">Why Silvercore</p>
+            <p className="text-xs uppercase tracking-[0.35em] text-sky-300">Why Silver Core</p>
             <h2 className="mt-4 font-['Cormorant_Garamond'] text-4xl tracking-tight text-white">A boutique process built around trust and execution quality.</h2>
             <div className="mt-6 space-y-5">
               {content.home.why_silvercore.map((item, index) => (

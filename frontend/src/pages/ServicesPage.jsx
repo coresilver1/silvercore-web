@@ -9,8 +9,8 @@ export default function ServicesPage({ content }) {
   return (
     <>
       <SeoHead
-        title="Services | Silvercore Partners"
-        description="Explore Silvercore Partners’ M&A advisory, strategic capital, cross-border execution and investor relations capabilities."
+        title="Services | Silver Core Partners"
+        description="Explore Silver Core Partners’ M&A advisory, strategic capital, cross-border execution and investor relations capabilities."
         structuredData={[buildOrganizationSchema(content), buildServicesSchema(content)]}
       />
 
@@ -43,7 +43,7 @@ export default function ServicesPage({ content }) {
           <SectionHeader
             eyebrow="Execution process"
             title="A three-phase process that favors control over noise."
-            description="Silvercore’s execution model is straightforward by design: establish clarity, map the right market and maintain discipline all the way through diligence and negotiation."
+            description="Silver Core’s execution model is straightforward by design: establish clarity, map the right market and maintain discipline all the way through diligence and negotiation."
           />
 
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
