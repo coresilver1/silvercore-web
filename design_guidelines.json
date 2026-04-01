@@ -1,0 +1,147 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 5: Jewel & Luxury (Premium Deep Navy variant)",
+  "colors": {
+    "background": "#050814",
+    "surface": "#0B1221",
+    "surface_glass": "rgba(11, 18, 33, 0.7)",
+    "primary": "#E2E8F0",
+    "secondary": "#94A3B8",
+    "accent": "#38BDF8",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "text_main": "#F8F9FA",
+    "text_muted": "#94A3B8"
+  },
+  "typography": {
+    "font_heading": "Cormorant Garamond",
+    "font_body": "Outfit",
+    "rules": [
+      "Headings must use tight letter spacing (tracking-tight).",
+      "Do NOT use Inter for any headings.",
+      "Use bold/black weight for strong contrast or light weight for elegance in headings.",
+      "Body text should be highly legible, max 40-60 words per block.",
+      "All font pairings must reflect authoritative, old-money finance yet modern precision."
+    ]
+  },
+  "layout_spacing": {
+    "strategy": "The 'Control Room' Mixed with Grid Borders",
+    "rules": [
+      "Minimalist layout with generous whitespace (py-24, py-32 for sections).",
+      "Use 1px borders (border-white/10) to define grid items and cards. Use sharp corners (rounded-none).",
+      "Avoid heavy motion or parallax. Use subtle fade-ins (framer-motion).",
+      "No full-screen gradients. Use solid dark backgrounds with subtle grain/noise or abstract macro photography."
+    ]
+  },
+  "pages_and_content": {
+    "home": {
+      "sections": [
+        "Hero with a striking tagline connecting India, US, Europe, and UK",
+        "Mission narrative (strategic clarity, selectivity, senior-led execution)",
+        "Metrics bar (e.g., '50+ strategic engagements')",
+        "CTAs ('Speak with an M&A advisor', 'Partner with us')"
+      ]
+    },
+    "about": {
+      "sections": [
+        "150-word firm history and philosophy emphasizing transparency and authenticity",
+        "3 Partner Biographies (80 words each, credible cross-border M&A backgrounds)"
+      ]
+    },
+    "services": {
+      "categories": [
+        "M&A Advisory",
+        "Strategic Capital Advisory",
+        "Cross-Border Transactions",
+        "Growth & Founder Advisory",
+        "Capital Structuring",
+        "Investor Relations"
+      ],
+      "rules": [
+        "3-sentence jargon-free descriptions per service inside modular cards",
+        "Include a 3-phase execution process (Mandate Clarity, Selective Market Mapping, Execution Discipline)"
+      ]
+    },
+    "investments": {
+      "categories": [
+        "M&A Transactions",
+        "Growth Capital",
+        "Cross-Border Expansion",
+        "Strategic Partnerships",
+        "Private Investments"
+      ],
+      "rules": [
+        "Describe typical deal size ranges and client outcomes",
+        "Implement interactive filters for geography, sector, and deal size"
+      ]
+    },
+    "insights": {
+      "features": [
+        "10 blog post titles around 2026 cross-border M&A trends with short summaries",
+        "Organize by topic clusters (e.g., 'India-US deals', 'Capital structuring signals')",
+        "SEO-friendly FAQs formatted in 40-60 word blocks"
+      ]
+    },
+    "contact": {
+      "features": [
+        "Form fields: Name, Email, Company/Fund Name, Region, Message",
+        "Office listings with addresses and phone numbers for India, US, Europe, and UK",
+        "Backend logic to store in database for future email notifications"
+      ]
+    },
+    "legal": {
+      "pages": [
+        "Privacy Policy",
+        "Terms of Service"
+      ]
+    }
+  },
+  "ai_advisor_chat": {
+    "ui_requirements": [
+      "Position: Fixed bottom right corner (fixed bottom-6 right-6).",
+      "Interface: Minimalist floating button that opens a glassmorphism chat window (backdrop-blur-xl).",
+      "Behavior: Must proactively greet users and ask clarifying questions (business, sector, size, goals).",
+      "Disclaimer: Clearly display 'Educational guidance only. Not financial or legal advice.'",
+      "Suggested Prompts: 'Summarize the typical steps in a cross-border M&A process between India and the U.S.', 'Explain the difference between growth capital and private equity investment.', 'Highlight three considerations when structuring an M&A deal between a European investor and a UK target.'"
+    ],
+    "backend_instructions": {
+      "route": "/api/chat",
+      "logic": "Forward user messages and context to an OpenAI chat model. Instruct the AI to act as an M&A advisory assistant. Log transcripts securely to the database. Handle errors gracefully.",
+      "llm_model": "GPT-5.2 (Simulated via standard OpenAI API calls)"
+    }
+  },
+  "seo_and_accessibility": {
+    "rules": [
+      "Implement JSON-LD structured data (Organization, Services, Articles).",
+      "Ensure high color contrast ratios for typography.",
+      "Add `data-testid` to all interactive and key informational elements."
+    ]
+  },
+  "media": {
+    "hero_bg": "https://images.unsplash.com/photo-1766923939514-71397ab6d658",
+    "services_bg": "https://images.unsplash.com/photo-1583443965608-57b6bc3198e7",
+    "insights_bg": "https://images.pexels.com/photos/5722018/pexels-photo-5722018.jpeg",
+    "partner_1": "https://images.pexels.com/photos/35964820/pexels-photo-35964820.jpeg",
+    "partner_2": "https://images.unsplash.com/photo-1758600587730-a11917c13b85",
+    "partner_3": "https://images.pexels.com/photos/10657877/pexels-photo-10657877.jpeg",
+    "office_india": "https://images.unsplash.com/photo-1652106032456-fc4ce369b1c9",
+    "office_us": "https://images.pexels.com/photos/31710856/pexels-photo-31710856.jpeg",
+    "office_eu": "https://images.pexels.com/photos/18852209/pexels-photo-18852209.jpeg",
+    "office_uk": "https://images.unsplash.com/photo-1758216863138-96ec40dac9c4"
+  },
+  "technical_architecture": {
+    "frontend": "React (Vite) + Tailwind CSS + Shadcn UI + Framer Motion. Use React Router for navigation.",
+    "backend": "Python FastAPI",
+    "database": "SQLite for storing blog posts, case studies, team bios, contact messages, and chat transcripts."
+  },
+  "instructions_to_main_agent": [
+    "Build the complete hybrid_fullstack application based on these design guidelines.",
+    "Create all 7 requested frontend pages using the specified typography and color variables.",
+    "Implement the FastAPI backend with an `/api/chat` route that communicates with OpenAI.",
+    "Set up the SQLite database schema and provide endpoints for saving contact form submissions and logging chat transcripts.",
+    "Ensure the Services page uses modular cards and outlines the 3-phase execution process.",
+    "Ensure the Investments page includes the specified interactive filters.",
+    "Generate the 10 blog posts and FAQs for the Insights page as requested.",
+    "Embed the JSON-LD schemas in the document heads.",
+    "Produce a comprehensive README explaining how to run the project locally, set up the database, and configure the OpenAI API key."
+  ]
+}
