@@ -20,7 +20,6 @@ export const AiAdvisorChat = ({ chat, brand }) => {
     }
   }, [chat]);
 
-  const suggestedPrompts = useMemo(() => chat?.suggested_prompts ?? [], [chat]);
 
   if (!chat) {
     return null;
