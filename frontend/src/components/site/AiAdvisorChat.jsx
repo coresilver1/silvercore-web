@@ -142,20 +142,7 @@ export const AiAdvisorChat = ({ chat, brand }) => {
               </div>
             ))}
           </div>
-
-          <div className="mt-4 flex flex-wrap gap-2">
-            {suggestedPrompts.map((prompt, index) => (
-              <button
-                key={prompt}
-                type="button"
-                onClick={() => handleSend(prompt)}
-                className="rounded-full border border-white/10 px-3 py-2 text-left text-xs leading-5 text-slate-300 transition hover:border-sky-300/40 hover:text-white"
-                data-testid={`ai-chat-suggested-prompt-${index}`}
-              >
-                {prompt}
-              </button>
-            ))}
-          </div>
+          
 
           <div className="mt-4 space-y-3">
             <Textarea
