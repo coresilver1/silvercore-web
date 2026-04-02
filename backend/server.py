@@ -189,9 +189,6 @@ async def chat_with_advisor(payload: ChatRequest):
     suggested_prompts = SITE_CONTENT["chat"]["suggested_prompts"]
     formatted_context = format_context(payload.context)
     recent_messages = await fetch_recent_messages(session_id)
-    history_text = "\n".join(
-        [f"{message['role'].title()}: {message['content']}" for message in recent_messages]
-    ) or "No previous messages."
 
     if not OPENAI_API_KEY:
         reply = (
@@ -210,27 +207,47 @@ async def chat_with_advisor(payload: ChatRequest):
         )
 
     try:
-        from emergentintegrations.llm.chat import LlmChat, UserMessage
+        client_openai = OpenAI(api_key=OPENAI_API_KEY)
 
-        chat = LlmChat(
-            api_key=OPENAI_API_KEY,
-            session_id=session_id,
-            system_message=build_chat_system_prompt(),
-        ).with_model("openai", OPENAI_MODEL)
+        messages = [
+            {"role": "system", "content": build_chat_system_prompt()}
+        ]
 
-        composed_message = (
-            "Client context:\n"
-            f"{formatted_context}\n\n"
-            "Recent conversation:\n"
-            f"{history_text}\n\n"
-            "Latest user message:\n"
-            f"{payload.message}\n\n"
-            "Remember to provide educational guidance only and avoid financial or legal advice."
+        if payload.context:
+            messages.append(
+                {
+                    "role": "system",
+                    "content": (
+                        "Client context:\n"
+                        f"{formatted_context}"
+                    ),
+                }
+            )
+
+        for message in recent_messages:
+            role = message.get("role", "user")
+            content = message.get("content", "")
+            if role in ("user", "assistant") and content:
+                messages.append({"role": role, "content": content})
+
+        messages.append({"role": "user", "content": payload.message})
+
+        response = client_openai.chat.completions.create(
+            model=OPENAI_MODEL,
+            messages=messages,
+            temperature=0.7,
         )
 
-        response_text = await chat.send_message(UserMessage(text=composed_message))
-        reply = str(response_text).strip()
+        reply = (response.choices[0].message.content or "").strip()
+
+        if not reply:
+            reply = (
+                "I’m ready to help with general educational guidance on cross-border M&A, "
+                "growth capital and strategic partnerships. Could you share your sector, company size and main goal?"
+            )
+
         await save_chat_messages(session_id, payload.context, payload.message, reply, configured=True)
+
         return ChatResponse(
             success=True,
             session_id=session_id,
@@ -239,6 +256,7 @@ async def chat_with_advisor(payload: ChatRequest):
             disclaimer=disclaimer,
             suggested_prompts=suggested_prompts,
         )
+
     except Exception as exc:
         logger.exception("Chat request failed: %s", exc)
         reply = (
