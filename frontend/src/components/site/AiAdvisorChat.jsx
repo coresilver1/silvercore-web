@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { Bot, MessageSquareText, Send, Sparkles } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "../ui/button";
