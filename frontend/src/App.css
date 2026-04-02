@@ -48,3 +48,73 @@
         transform: translateY(0);
     }
 }
+
+.custom-cursor-dot,
+.custom-cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.24s ease;
+    will-change: transform, opacity;
+}
+
+.custom-cursor-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(148, 163, 184, 0.7) 48%, rgba(56, 189, 248, 0.18) 100%);
+    box-shadow: 0 0 24px rgba(125, 211, 252, 0.22);
+}
+
+.custom-cursor-glow {
+    width: 92px;
+    height: 92px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(125, 211, 252, 0.14) 0%, rgba(125, 211, 252, 0.08) 35%, rgba(15, 23, 42, 0) 72%);
+    filter: blur(6px);
+}
+
+.touch-ripple {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    margin-left: -9px;
+    margin-top: -9px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, 0.5);
+    background: radial-gradient(circle, rgba(148, 163, 184, 0.22) 0%, rgba(56, 189, 248, 0.08) 48%, rgba(15, 23, 42, 0) 82%);
+    animation: touchRipple 0.82s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes touchRipple {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(6.4);
+    }
+}
+
+@media (pointer: coarse) {
+    .custom-cursor-dot,
+    .custom-cursor-glow {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .custom-cursor-dot,
+    .custom-cursor-glow,
+    .touch-ripple {
+        display: none;
+        animation: none;
+        transition: none;
+    }
+}

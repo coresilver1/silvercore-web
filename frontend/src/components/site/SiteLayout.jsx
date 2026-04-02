@@ -2,6 +2,7 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { AiAdvisorChat } from "./AiAdvisorChat";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { InteractionLayer } from "./InteractionLayer";
 
 export const SiteLayout = ({ brand, contact, globalCoverage, chat, children }) => {
   return (
@@ -13,6 +14,7 @@ export const SiteLayout = ({ brand, contact, globalCoverage, chat, children }) =
         <main>{children}</main>
         <Footer brand={brand} contact={contact} globalCoverage={globalCoverage} />
       </div>
+      <InteractionLayer />
       <AiAdvisorChat chat={chat} brand={brand} />
       <WhatsAppButton contact={contact} />
     </div>

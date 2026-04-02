@@ -61,6 +61,11 @@ Build a boutique M&A advisory website called Silver Core Partners for cross-bord
 - Refined the Silver Core Partners wordmark with subtler spacing, improved balance between “Silver”, “Core” and “Partners”, and a more bespoke boutique-finance feel
 - Applied the updated wordmark treatment consistently in the main navigation, loading state and footer
 
+### 2026-04-01 — Interaction polish pass
+- Added a subtle premium desktop cursor glow / follower effect with restrained hover response for interactive elements
+- Added mobile and tablet touch ripple feedback for interactive taps to preserve a refined interaction feel on non-cursor devices
+- Animated the homepage metrics to count up once on scroll with elegant timing while preserving the `+` and `%` suffixes
+
 ## Validation Notes
 - Self-tested backend endpoints through the external API URL
 - Self-tested frontend routing and chatbot open/send behavior using Playwright screenshots

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Compass, Globe2, ShieldCheck } from "lucide-react";
 import { Button } from "../components/ui/button";
+import { AnimatedMetric } from "../components/site/AnimatedMetric";
 import { SeoHead } from "../components/site/SeoHead";
 import { SectionHeader } from "../components/site/SectionHeader";
 import { buildOrganizationSchema } from "../lib/seo";
@@ -68,12 +69,7 @@ export default function HomePage({ content }) {
 
         <div className="mx-auto mt-8 grid max-w-7xl gap-px overflow-hidden border border-white/10 bg-white/10 sm:grid-cols-2 xl:grid-cols-4">
           {content.brand.metrics.map((metric, index) => (
-            <div key={metric.label} className="bg-[#0b1221] p-6" data-testid={`home-metric-${index}`}>
-              <p className="text-xs uppercase tracking-[0.3em] text-slate-400">{metric.label}</p>
-              <p className="mt-4 font-['Cormorant_Garamond'] text-4xl text-white" data-testid={`home-metric-value-${index}`}>
-                {metric.value}
-              </p>
-            </div>
+            <AnimatedMetric key={metric.label} label={metric.label} value={metric.value} index={index} />
           ))}
         </div>
       </section>
