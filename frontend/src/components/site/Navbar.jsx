@@ -1,6 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
+import { Wordmark } from "./Wordmark";
 
 const navigation = [
   { label: "Home", to: "/" },
@@ -16,12 +17,7 @@ export const Navbar = ({ brand }) => {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#050814]/85 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center justify-between gap-6 px-6 py-5 lg:px-10">
         <Link to="/" className="min-w-[220px]" data-testid="site-logo-link">
-          <p className="font-['Cormorant_Garamond'] text-3xl tracking-tight text-slate-50" data-testid="site-logo-text">
-            {brand.name}
-          </p>
-          <p className="text-xs uppercase tracking-[0.3em] text-slate-400" data-testid="site-logo-tagline">
-            Boutique cross-border advisory
-          </p>
+          <Wordmark />
         </Link>
 
         <nav className="flex flex-1 flex-wrap justify-center gap-3 text-sm text-slate-300" data-testid="primary-navigation">

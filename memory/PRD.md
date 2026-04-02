@@ -57,6 +57,10 @@ Build a boutique M&A advisory website called Silver Core Partners for cross-bord
 - Updated the public-facing company name across the site from “Silvercore Partners” to “Silver Core Partners” including navigation, logo, metadata, contact copy and chatbot welcome text
 - Simplified the floating WhatsApp button to an icon-only launcher while preserving WhatsApp CTAs in the contact page and footer
 
+### 2026-04-01 — Wordmark refinement pass
+- Refined the Silver Core Partners wordmark with subtler spacing, improved balance between “Silver”, “Core” and “Partners”, and a more bespoke boutique-finance feel
+- Applied the updated wordmark treatment consistently in the main navigation, loading state and footer
+
 ## Validation Notes
 - Self-tested backend endpoints through the external API URL
 - Self-tested frontend routing and chatbot open/send behavior using Playwright screenshots

@@ -1,14 +1,15 @@
 import { Mail, MessageCircleMore } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Wordmark } from "./Wordmark";
 
 export const Footer = ({ brand, contact, globalCoverage }) => {
   return (
     <footer className="border-t border-white/10 bg-black/20 px-6 py-20 lg:px-10">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.2fr_1fr]">
         <div>
-          <p className="text-xs uppercase tracking-[0.35em] text-sky-300" data-testid="footer-eyebrow">
-            Silver Core Partners
-          </p>
+          <div data-testid="footer-eyebrow">
+            <Wordmark compact showTagline={false} dataTestIdPrefix="footer-logo" />
+          </div>
           <h2 className="mt-4 max-w-2xl font-['Cormorant_Garamond'] text-4xl tracking-tight" data-testid="footer-heading">
             Professional guidance for cross-border decisions that demand clarity.
           </h2>
